@@ -1,0 +1,19 @@
+{
+    "manifest_version":3,
+    "name":"Fraud website detection",
+    "version":"1.0.0",
+    "description":"detect if a website is fraudulent using ML model",
+    "permissions":["tabs","scripting","activeTab"],
+    "host_permissions":["<all_urls>"],
+    
+    "action":{
+        "default_popup":"popup.html",
+        "default_icon":{
+            "50":"icons/icons8-batman-emoji-50.png",
+            "100":"icons/icons8-batman-emoji-100.png"
+        }
+    },
+   "background": {
+       "service_worker":"background.js"
+   }
+}
